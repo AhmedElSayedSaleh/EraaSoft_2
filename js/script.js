@@ -23,7 +23,7 @@ navLinks.forEach(navLink => {
         let aHref = $(navLink).attr("href");
         let secOffset = $(aHref).offset().top;
 
-        if (windowScroll >= secOffset) {
+        if (windowScroll >= secOffset - 1) {
             navLinks.forEach(navLink => {
                 navLink.classList.remove("active");
             });
